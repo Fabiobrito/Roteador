@@ -10,11 +10,11 @@
  */
 public class Pacote {
     private String Cabeçalho;
-    private String Terminador; 
-    private int Dados;  
+    private int Terminador; 
+    private String Dados;  
     private String Destino;
 
-    public Pacote(String Cabeçalho, String Terminador, int Dados, String Destino) {
+    public Pacote(String Cabeçalho, int Terminador, String Dados, String Destino) {
         this.Cabeçalho = Cabeçalho;
         this.Terminador = Terminador;
         this.Dados = Dados;
@@ -22,11 +22,11 @@ public class Pacote {
     }
     
     
-    public int getDados() {
+    public String getDados() {
         return Dados;
     }
 
-    public void setDados(int Dados) {
+    public void setDados(String Dados) {
         this.Dados = Dados;
     }
 

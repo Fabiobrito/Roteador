@@ -9,13 +9,13 @@
  * @author fabiobrito
  */
 public class Roteador extends DispositivoDeRede{
-    private Portas portas;
+    private Portas porta;
     private Fila Buffers;
     
    
-    public Roteador(String IP, String MAC,Portas portas, Fila Buffers){
+    public Roteador(String IP, String MAC,Portas porta, Fila Buffers){
        super(IP,MAC);
-       this.portas=portas;
+       this.porta=porta;
        this.Buffers= Buffers;
        
     }      

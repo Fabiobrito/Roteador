@@ -9,14 +9,16 @@
  * @author fabiobrito
  */
 public abstract class  DispositivoDeRede {
-
+    private String IP;
+    private String MAC;
+    
+    
     public DispositivoDeRede(String IP, String MAC) {
         super();
         this.IP = IP;
         this.MAC = MAC;
     }
-    private String IP;
-    private String MAC;
+   
 
     public String getIP() {
         return IP;
