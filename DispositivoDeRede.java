@@ -19,6 +19,11 @@ public abstract class  DispositivoDeRede {
         this.IP = IP;
         this.MAC = MAC;
     }
+    public DispositivoDeRede(String IP) {
+       // super();
+        this.IP = IP;
+        //his.MAC = MAC;
+    }
    
 
     public String getIP() {
