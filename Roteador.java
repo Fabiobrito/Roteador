@@ -12,7 +12,9 @@ public class Roteador extends DispositivoDeRede{
     private Portas porta;
     private Fila Buffers;
     
-   
+    public Roteador(){
+    
+    }
     public Roteador(String IP, String MAC,Portas porta, Fila Buffers){
        super(IP,MAC);
        this.porta=porta;
@@ -24,4 +26,11 @@ public class Roteador extends DispositivoDeRede{
     public void roteamento(Pacote pacote){
         
     }
+
+    @Override
+    public void setIP(String IP) {
+        this.IP = IP; 
+    }
+
+    
 }
