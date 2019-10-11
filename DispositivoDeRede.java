@@ -15,12 +15,12 @@ public abstract class  DispositivoDeRede {
     public DispositivoDeRede(){
     }
     public DispositivoDeRede(String IP, String MAC) {
-       // super();
+      
         this.IP = IP;
         this.MAC = MAC;
     }
     public DispositivoDeRede(String IP) {
-       // super();
+       
         this.IP = IP;
         //his.MAC = MAC;
     }

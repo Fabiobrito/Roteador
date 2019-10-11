@@ -9,20 +9,20 @@
  * @author fabiobrito
  */
 public class Roteador extends DispositivoDeRede{
-    private Portas porta;
+    private Portas[] portas;
     private Fila Buffers;
     
     public Roteador(){
     
     }
     public Roteador(String IP){
-    super(IP);
+    
     this.IP=IP;
     }
 
     public Roteador(String IP, String MAC,Portas porta, Fila Buffers){
        super(IP);
-       this.porta=porta;
+       this.portas= new Portas[5];
        this.Buffers= Buffers;
        
     }      
@@ -36,8 +36,10 @@ public class Roteador extends DispositivoDeRede{
     }
     public void checaPrioridade(){
     }
-    public void roteamento(Pacote pacote){
+    public Portas[] roteamento(Pacote pacote){
         
+        
+        return portas;
     }
 
     

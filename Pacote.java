@@ -13,7 +13,9 @@ public class Pacote {
     private int Terminador; 
     private String Dados;  
     private String Destino;
-
+    
+    public Pacote(){
+    }
     public Pacote(String Cabeçalho, int Terminador, String Dados, String Destino) {
         this.Cabeçalho = Cabeçalho;
         this.Terminador = Terminador;

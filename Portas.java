@@ -11,6 +11,9 @@
 public class Portas {
     private Pacote entrada;
     private Pacote saida;
+    
+    public Portas(){
+    }
 
     public Portas(Pacote entrada, Pacote saida) {
         this.entrada = entrada;

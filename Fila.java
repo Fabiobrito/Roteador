@@ -13,26 +13,29 @@ public class Fila {
     private int total=0;
     private int last=0;
     private int first=0;
-
+    
     public Fila(Pacote pacote, int total, int last, int first) {
         this.total = total;
         this.last = last;
         this.first = first;
-        pacotes = new Pacote[11];
+        pacotes = new Pacote[12];
     }
 
+    public boolean full(){
+        return total == pacotes.length;
+    }
+    public boolean empty(){
+        return total == 0;
+    }
     
     public void insert(Pacote pacote){
         pacotes[last]=pacote;
-        last++;
-        if(last==11){//if the last is the same size of the vector, then the last becomes the first
-            last=0;
-        }
+        last=(last+1)%pacotes.length;
         total++;
     }
     public Pacote remove(){
         Pacote aux=pacotes[first];
-        first++;
+        first=(first+1)%pacotes.length;
         total--;
         return aux;
     }
