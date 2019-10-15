@@ -25,7 +25,7 @@ public class Main {
     //File  arq  =new File ("/home/fabiobrito/Documentos/UFRN/19.2/lp2/roteamento/ips.txt");
     public static void main(String[] args) throws FileNotFoundException{
         // TODO code application logic here
-        File  arq  =new File ("/home/fabiobrito/Documentos/UFRN/19.2/lp2/roteamento/ips.txt");
+        File  arq  =new File ("/home/fabiobrito/Documentos/UFRN/19.2/lp2/Roteador/src/ips.txt");
         int i,j;
         String[] aux = new String[9];
         Roteador[][] matriz=new Roteador[3][3];
@@ -44,11 +44,11 @@ public class Main {
                             cont++;
                         }
                     }
-                    for(i=0;i<3;i++){
+                   /*for(i=0;i<3;i++){ //verificava se os roteadores recebiam mesmo os ips
                         for(j=0;j<3;j++){
                            System.out.println(matriz[i][j].getIP());
                         }
-                    }
+                    }*/
                 
             }
             catch(Exception ex){
